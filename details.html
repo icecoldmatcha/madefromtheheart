@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>made from the art. | shop</title>
+    <link rel="stylesheet" href="./vendor/spectre.css/dist/spectre.min.css" />
+    <link
+      rel="stylesheet"
+      href="./vendor/spectre.css/dist/spectre-exp.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./vendor/spectre.css/dist/spectre-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./vendor/typicons.font/src/font/typicons.min.css"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <script src="src/js/scripts.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar-header">
+      <script>
+        load(
+          "./components/navbar.html",
+          document.getElementById("navbar-header")
+        );
+      </script>
+    </div>
+    <section>
+      <div class="container grid-md">
+        <div class="columns">
+          <div class="column col-sm-12 py-2">
+            <form id="orderForm" class="mb-2" action="./receipt.html">
+              <h4>Order Details</h4>
+              <p class="text-muted">Please fill up required fields.</p>
+              <div class="divider"></div>
+              <section>
+                <div class="form-group">
+                  <div class="columns">
+                    <div class="column col-sm-6 col-mx-auto">
+                      <label class="form-label" for="fName">First Name</label>
+                      <input
+                        class="form-input"
+                        type="text"
+                        id="fName"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="column col-sm-6 col-mx-auto">
+                      <label class="form-label" for="lName">Last Name</label>
+                      <input
+                        class="form-input"
+                        type="text"
+                        id="lName"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="columns">
+                    <div class="column col-sm-6 col-mx-auto">
+                      <label class="form-label" for="cNum"
+                        >Contact Number</label
+                      >
+                      <input
+                        class="form-input"
+                        type="text"
+                        id="cNum"
+                        placeholder="Contact Number"
+                      />
+                    </div>
+                    <div class="column col-sm-6 col-mx-auto">
+                      <label class="form-label" for="cEmail"
+                        >Email Address</label
+                      >
+                      <input
+                        class="form-input"
+                        type="email"
+                        id="cEmail"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="columns">
+                    <div class="column col-sm-6 col-mx-auto">
+                      <label class="form-label" for="addr1"
+                        >House No., Blk No., Lot No.</label
+                      >
+                      <input
+                        class="form-input"
+                        type="text"
+                        id="addr1"
+                        placeholder="House No., Blk No., Lot No."
+                      />
+                    </div>
+                    <div class="column col-sm-6 col-mx-auto">
+                      <label class="form-label" for="addr2"
+                        >Street Name, Subdivision</label
+                      >
+                      <input
+                        class="form-input"
+                        type="text"
+                        id="addr2"
+                        placeholder="Street Name, Subdivision"
+                      />
+                    </div>
+                  </div>
+                  <div class="columns">
+                    <div class="column col-sm-4 col-mx-auto">
+                      <label class="form-label" for="addr3">Barangay</label>
+                      <input
+                        class="form-input"
+                        type="text"
+                        id="addr3"
+                        placeholder="Barangay"
+                      />
+                    </div>
+                    <div class="column col-sm-4 col-mx-auto">
+                      <label class="form-label" for="addr4">City</label>
+                      <input
+                        class="form-input"
+                        type="text"
+                        id="addr4"
+                        placeholder="City"
+                      />
+                    </div>
+                    <div class="column col-sm-4 col-mx-auto">
+                      <label class="form-label" for="addr5">Region</label>
+                      <input
+                        class="form-input"
+                        type="text"
+                        id="addr5"
+                        placeholder="Region"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="sectionPayment">
+                <div class="form-group">
+                  <div class="columns">
+                    <div class="column col-sm-12 col-mx-auto">
+                      <label class="form-label" for="payMode"
+                        >Mode of Payment</label
+                      >
+                      <label class="form-radio form-inline">
+                        <input
+                          id="modeCC"
+                          type="radio"
+                          name="payMode"
+                          value="1"
+                        />
+                        <i class="form-icon"></i> Credit Card
+                      </label>
+                      <!--<label class="form-radio form-inline">
+                        <input
+                          id="modeEW"
+                          type="radio"
+                          name="payMode"
+                          value="2"
+                        />
+                        <i class="form-icon"></i> e-Wallet
+                      </label>-->
+                      <label class="form-radio form-inline">
+                        <input
+                          id="modeCOD"
+                          type="radio"
+                          name="payMode"
+                          value="2"
+                        />
+                        <i class="form-icon"></i> Cash on Delivery
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <section id="payCC" class="d-none">
+                  <div class="form-group">
+                    <div class="columns">
+                      <div class="column col-sm-6 col-mx-auto">
+                        <label class="form-label" for="creditType"
+                          >Credit Card Type</label
+                        >
+                        <input
+                          id="creditType"
+                          type="text"
+                          placeholder="Credit Card"
+                          class="form-input"
+                        />
+                      </div>
+                      <div class="column col-sm-6 col-mx-auto">
+                        <label class="form-label" for="creditNum"
+                          >Account Number</label
+                        >
+                        <input
+                          id="creditNum"
+                          type="text"
+                          placeholder="Credit Card"
+                          class="form-input"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </section>
+              <section>
+                <div class="form-group">
+                  <div class="columns">
+                    <div class="column col-sm-12">
+                      <label class="form-label" for="cNotes">Notes</label>
+                      <textarea
+                        class="form-input"
+                        id="cNotes"
+                        placeholder="Notes"
+                        rows="3"
+                        style="resize: none"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="text-center">
+                <button class="btn btn-primary m-2" type="submit">
+                  Proceed
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      PayModeCC();
+    </script>
+  </body>
+</html>

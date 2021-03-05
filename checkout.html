@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>made from the art. | shop</title>
+    <link rel="stylesheet" href="./vendor/spectre.css/dist/spectre.min.css" />
+    <link
+      rel="stylesheet"
+      href="./vendor/spectre.css/dist/spectre-exp.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./vendor/spectre.css/dist/spectre-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./vendor/typicons.font/src/font/typicons.min.css"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <script src="src/js/scripts.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar-header">
+      <script>
+        load(
+          "./components/navbar.html",
+          document.getElementById("navbar-header")
+        );
+      </script>
+    </div>
+    <section>
+      <div class="container grid-md">
+        <div class="columns">
+          <div class="column col-xs-4 py-2">
+            <h4>Checkout Items</h4>
+            <p class="text-muted">Please select items</p>
+            <form class="mb-2" action="./details.html">
+              <div class="divider"></div>
+              <div class="form-group">
+                <div class="tile py-2 px-2 cart-dim">
+                  <div class="tile-content px-2 py-2">
+                    <div class="d-inline">
+                      <label class="form-checkbox">
+                        <input type="checkbox" />
+                        <i class="form-icon"></i>
+                        <h6 class="tile-title">Item Name</h6>
+                        <p class="tile-subtitle text-italic">
+                          Item Description
+                        </p>
+                      </label>
+                      <div class="columns">
+                        <div class="column col-6 col-mx-auto py-2 p-centered">
+                          <img
+                            src="https://images-na.ssl-images-amazon.com/images/I/81xBMko7CZL._AC_SL1500_.jpg"
+                            class="img-responsive img-fit-contain"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tile-action px-2 py-2">
+                    <button
+                      class="btn btn-primary text-center item-del"
+                      type="button"
+                    >
+                      <i class="typcn typcn-trash"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="tile py-2 px-2 cart-dim">
+                  <div class="tile-content px-2 py-2">
+                    <div class="d-inline">
+                      <label class="form-checkbox">
+                        <input type="checkbox" />
+                        <i class="form-icon"></i>
+                        <h6 class="tile-title">Item Name</h6>
+                        <p class="tile-subtitle text-italic">
+                          Item Description
+                        </p>
+                      </label>
+                      <div class="columns">
+                        <div class="column col-6 col-mx-auto py-2 p-centered">
+                          <img
+                            src="https://images-na.ssl-images-amazon.com/images/I/81zEo-WYqWL._AC_SL1500_.jpg"
+                            class="img-responsive img-fit-contain"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tile-action px-2 py-2">
+                    <button
+                      class="btn btn-primary text-center item-del"
+                      type="button"
+                    >
+                      <i class="typcn typcn-trash"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary p-centered mb-2" type="submit">
+                Proceed
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
